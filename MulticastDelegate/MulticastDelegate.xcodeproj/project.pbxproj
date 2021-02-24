@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		55EAECFF25E6CEBD00197DAB /* MulticastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55EAECFD25E6CEBD00197DAB /* MulticastDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55EAED0925E6D44600197DAB /* MultiCastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EAED0825E6D44600197DAB /* MultiCastDelegate.swift */; };
+		55EAED0C25E6D4D200197DAB /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EAED0B25E6D4D200197DAB /* WeakReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55EAECFA25E6CEBD00197DAB /* MulticastDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MulticastDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EAECFD25E6CEBD00197DAB /* MulticastDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulticastDelegate.h; sourceTree = "<group>"; };
 		55EAECFE25E6CEBD00197DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55EAED0825E6D44600197DAB /* MultiCastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCastDelegate.swift; sourceTree = "<group>"; };
+		55EAED0B25E6D4D200197DAB /* WeakReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				55EAECFD25E6CEBD00197DAB /* MulticastDelegate.h */,
+				55EAED0825E6D44600197DAB /* MultiCastDelegate.swift */,
+				55EAED0B25E6D4D200197DAB /* WeakReference.swift */,
 				55EAECFE25E6CEBD00197DAB /* Info.plist */,
 			);
 			path = MulticastDelegate;
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					55EAECF925E6CEBD00197DAB = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EAED0925E6D44600197DAB /* MultiCastDelegate.swift in Sources */,
+				55EAED0C25E6D4D200197DAB /* WeakReference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +270,10 @@
 		55EAED0325E6CEBD00197DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C2V8MZT3S7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,7 +288,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linto.MulticastDelegate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +301,10 @@
 		55EAED0425E6CEBD00197DAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C2V8MZT3S7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -300,7 +319,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linto.MulticastDelegate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
